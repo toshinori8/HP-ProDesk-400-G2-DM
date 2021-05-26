@@ -24,7 +24,7 @@
 - SSDT was generated for i3-6100T. Use https://github.com/Piker-Alpha/ssdtPRGen.sh to optimize yours CPU power management and then paste it into EFI/OC/ACPI/ssdt.aml
 ## Working / Fixed; 
 
-+ Sleep 
+
 + USB 
 + Sound 
 + Fixed Airplay screen mirroring - black screen with mouse cursor (Skylake isue) 
@@ -45,4 +45,5 @@
 
 
 ### Issues
-- Display Port Audio output isn't working
++ Display Port Audio output isn't working
++ Sleep 
