@@ -8,6 +8,7 @@
 | ------------------- | ------------------------------------------- |
 | Computer model      | HP Prodesk 400 G2 DM      					|
 | Processor           | Intel(R) Core(TM) i3-6100T CPU @ 3.20GHz    |
+| SMBIOS           | iMac19/2     |
 | Graphics			  | Intel HD Graphics 530                  		|
 | Sound Card          | Realtek ALC221 (layout-id:11)            |
 | Ethernet		      | Realtek RTL8111 PCIE                        |
@@ -26,7 +27,7 @@
 
 
 + USB 
-+ Sound 
++ Sound / for internal speaker and lineOut bootargs alcid=11  ( remove for displayport audio )
 + Fixed Airplay screen mirroring - black screen with mouse cursor (Skylake isue) 
 + iMessages
 + Wifi and Ethernet
