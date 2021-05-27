@@ -9,7 +9,7 @@
 | Computer model      | HP Prodesk 400 G2 DM      					|
 | Processor           | Intel(R) Core(TM) i3-6100T CPU @ 3.20GHz    |
 | Graphics			  | Intel HD Graphics 530                  		|
-| Sound Card          | Realtek ALC221 (layout-id:11/15)            |
+| Sound Card          | Realtek ALC221 (layout-id:11)            |
 | Ethernet		      | Realtek RTL8111 PCIE                        |
 | WiFi		          | Intel 7265 m.2                          	|
 | RAM		          | 16GB                                     	|
