@@ -46,5 +46,5 @@
 
 
 ### Issues
-+ Display Port Audio output isn't working
++ Display Port Audio output isn't working with enabled internal speaker and lineout 
 + Sleep 
