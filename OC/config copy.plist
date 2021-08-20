@@ -187,19 +187,10 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,31,3</string>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>layout-id</key>
-				<integer>11</integer>
-				<key>model</key>
-				<string>100 Series/C230 Series Chipset Family HD Audio Controller</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>AAPL,GfxYTile</key>
+				<data>CqqqAA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbGQ==</data>
 				<key>AAPL,slot-name</key>
@@ -441,7 +432,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmCfgLock</key>
 			<true/>
 			<key>AppleXcpmExtraMsrs</key>
@@ -453,7 +444,7 @@
 			<key>DisableIoMapper</key>
 			<true/>
 			<key>DisableLinkeditJettison</key>
-			<true/>
+			<false/>
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>ExtendBTFeatureFlags</key>
@@ -472,6 +463,8 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 			<key>SetApfsTrimTimeout</key>
 			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
@@ -549,6 +542,8 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>AllowToggleSip</key>
+			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -585,6 +580,8 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>UEFI Shell</string>
 				<key>Path</key>
@@ -615,7 +612,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=11 -disablegfxfirmware npci=0x2000</string>
+				<string>-v npci=0x2000 igfxrpsc=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -652,31 +649,39 @@
 	<key>PlatformInfo</key>
 	<dict>
 		<key>Automatic</key>
-		<true/>
+		<false/>
 		<key>CustomMemory</key>
 		<true/>
-		<key>Generic</key>
+		<key>DataHub</key>
 		<dict>
-			<key>AdviseWindows</key>
-			<false/>
-			<key>MaxBIOSVersion</key>
-			<false/>
-			<key>MLB</key>
-			<string>C02937100CDKGQGUE</string>
-			<key>ProcessorType</key>
-			<integer>1541</integer>
-			<key>ROM</key>
-			<data></data>
-			<key>SpoofVendor</key>
-			<false/>
-			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
+			<key>ARTFrequency</key>
+			<integer>0</integer>
+			<key>BoardProduct</key>
+			<string>Mac-63001698E7A34814</string>
+			<key>BoardRevision</key>
+			<data>Bw==</data>
+			<key>DevicePathsSupported</key>
+			<integer>0</integer>
+			<key>FSBFrequency</key>
+			<integer>0</integer>
+			<key>InitialTSC</key>
+			<integer>0</integer>
+			<key>PlatformName</key>
+			<string></string>
+			<key>SmcBranch</key>
+			<data>ajEzOF85AAA=</data>
+			<key>SmcPlatform</key>
+			<data>ajEzOQAAAAA=</data>
+			<key>SmcRevision</key>
+			<data>AkcPAAAD</data>
+			<key>StartupPowerEvents</key>
+			<integer>0</integer>
 			<key>SystemProductName</key>
 			<string>iMac19,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZDPZ3JWDW</string>
+			<string>C02YL4ZGJWDW</string>
 			<key>SystemUUID</key>
-			<string>5BBE9714-CB94-4487-8C0C-0C11614B4A7A</string>
+			<string>40B7F7D0-E340-4309-9C3C-1271C6C0ECE0</string>
 		</dict>
 		<key>Memory</key>
 		<dict>
@@ -734,14 +739,88 @@
 			<key>TypeDetail</key>
 			<integer>16512</integer>
 		</dict>
+		<key>PlatformNVRAM</key>
+		<dict>
+			<key>BID</key>
+			<string>Mac-63001698E7A34814</string>
+			<key>FirmwareFeatures</key>
+			<data>dvWP/QAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f//f/wAAAAA=</data>
+			<key>MLB</key>
+			<string>C02916270CDKGQGCB</string>
+			<key>ROM</key>
+			<data>4kJhdYaZ</data>
+			<key>SystemSerialNumber</key>
+			<string></string>
+			<key>SystemUUID</key>
+			<string>40B7F7D0-E340-4309-9C3C-1271C6C0ECE0</string>
+		</dict>
+		<key>SMBIOS</key>
+		<dict>
+			<key>BIOSReleaseDate</key>
+			<string>03/10/2021</string>
+			<key>BIOSVendor</key>
+			<string></string>
+			<key>BIOSVersion</key>
+			<string>1554.100.64.0.0</string>
+			<key>BoardAssetTag</key>
+			<string>Base Board Asset Tag</string>
+			<key>BoardLocationInChassis</key>
+			<string>Part Component</string>
+			<key>BoardManufacturer</key>
+			<string>HP-Prodesk</string>
+			<key>BoardProduct</key>
+			<string>Mac-HP-Prodesk-G2-400</string>
+			<key>BoardSerialNumber</key>
+			<string>C02916270CDKGQGCB</string>
+			<key>BoardType</key>
+			<integer>10</integer>
+			<key>BoardVersion</key>
+			<string>iMac19,2</string>
+			<key>ChassisAssetTag</key>
+			<string>Asset Tag#</string>
+			<key>ChassisManufacturer</key>
+			<string></string>
+			<key>ChassisSerialNumber</key>
+			<string>C02YL4ZGJWDW</string>
+			<key>ChassisType</key>
+			<integer>13</integer>
+			<key>ChassisVersion</key>
+			<string>Mac-63001698E7A34814</string>
+			<key>FirmwareFeatures</key>
+			<data>dvWP/QAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f//f/wAAAAA=</data>
+			<key>PlatformFeature</key>
+			<integer>32</integer>
+			<key>ProcessorType</key>
+			<integer>1541</integer>
+			<key>SmcVersion</key>
+			<data></data>
+			<key>SystemFamily</key>
+			<string>iMac</string>
+			<key>SystemManufacturer</key>
+			<string>iMac19,2</string>
+			<key>SystemProductName</key>
+			<string>iMac19,2</string>
+			<key>SystemSKUNumber</key>
+			<string>System SKU#</string>
+			<key>SystemSerialNumber</key>
+			<string>C02YL4ZGJWDW</string>
+			<key>SystemUUID</key>
+			<string>40B7F7D0-E340-4309-9C3C-1271C6C0ECE0</string>
+			<key>SystemVersion</key>
+			<string>1.0</string>
+		</dict>
 		<key>UpdateDataHub</key>
-		<true/>
+		<false/>
 		<key>UpdateNVRAM</key>
 		<true/>
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Overwrite</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
@@ -784,7 +863,7 @@
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
 			<key>AudioOut</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>AudioSupport</key>
 			<true/>
 			<key>MinimumVolume</key>
@@ -835,7 +914,7 @@
 			<key>ForceResolution</key>
 			<false/>
 			<key>GopPassThrough</key>
-			<false/>
+			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -860,6 +939,8 @@
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
+			<false/>
+			<key>AppleEg2Info</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
