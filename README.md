@@ -25,8 +25,8 @@
 - SSDT was generated for i3-6100T. Use https://github.com/Piker-Alpha/ssdtPRGen.sh to optimize yours CPU power management and then paste it into EFI/OC/ACPI/ssdt.aml
 ## Working / Fixed; 
 
-
-+ USB 
++ Intel HD 530 blnking screen - fix by inject Intel Iris 540 
++ USB
 + Sound / for internal speaker and lineOut bootargs alcid=11  ( remove for displayport audio )
 + Fixed Airplay screen mirroring - black screen with mouse cursor (Skylake isue) 
 + iMessages
