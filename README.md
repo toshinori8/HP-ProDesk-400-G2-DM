@@ -1,6 +1,6 @@
 ![HP Prodesk 400 G2 DM](OC/Resources/Image/HP-ProDesk-400-G2.webp)
 # HP ProDesk 400 G2 DM 
-## Big Sur 11.5.1 (20G80)
+## Big Sur 11.5.2 (20G95)
 
 ## Configuration
 
