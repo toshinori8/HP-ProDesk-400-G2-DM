@@ -778,7 +778,7 @@
 			<key>ROM</key>
 			<data>4kJhdYaZ</data>
 			<key>SystemSerialNumber</key>
-			<string>C02CG0LR046M</string>
+			<string></string>
 			<key>SystemUUID</key>
 			<string>C309E18D-BD03-492A-A1E2-3A327DEBE83A</string>
 		</dict>
@@ -795,7 +795,7 @@
 			<key>BoardLocationInChassis</key>
 			<string>Part Component</string>
 			<key>BoardManufacturer</key>
-			<string></string>
+			<string>HP-Prodesk-G2400</string>
 			<key>BoardProduct</key>
 			<string>Mac-AF89B6D9451A490B</string>
 			<key>BoardSerialNumber</key>
