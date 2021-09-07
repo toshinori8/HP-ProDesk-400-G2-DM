@@ -34,6 +34,8 @@
 + M.2 Pcie SSD 
 + Fixed RTC error on restart 
 
+GeekBench 5.3.2 Score 1919
+https://browser.geekbench.com/v5/cpu/compare/9719494?baseline=8259325
 
 ## Installation
 
