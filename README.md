@@ -9,8 +9,8 @@
 | Computer model      | HP Prodesk 400 G2 DM      					|
 | Processor           | Intel(R) Core(TM) i3-6100T CPU @ 3.20GHz    |
 | SMBIOS           | iMac19/2     |
-| Graphics			  | Intel HD Graphics 530 fake Iris 540                 		|
-| Sound Card          | Realtek ALC221 (layout-id:11)            |
+| Graphics			  | Intel HD Graphics 530 fake [Intel Skylake GT2 [HD Graphics 520] 2048  MB]                 		|
+| Sound Card          | Realtek ALC221 (layout-id:88)            |
 | Ethernet		      | Realtek RTL8111 PCIE                        |
 | WiFi		          | Intel 7265 m.2                          	|
 | RAM		          | 16GB                                     	|
@@ -21,13 +21,19 @@
 
 ## Improvements
 
-- This version was prepared using OpenCore 0.7.2 for MacOS Big Sur.
+- This version was prepared using OpenCore 0.7.5 for MacOS Big Sur.
 - SSDT was generated for i3-6100T. Use https://github.com/Piker-Alpha/ssdtPRGen.sh to optimize yours CPU power management and then paste it into EFI/OC/ACPI/ssdt.aml
+- Used SSDTTime Script to fix irq issues for sound and generate dsdt-hpet.aml 
+
+
+
 ## Working / Fixed; 
 
-+ Intel HD 530 blnking screen - fix by inject Intel Iris 540 
+
+
++ Intel HD 530 blnking screen - fix by inject Intel Iris 520 
 + USB
-+ Sound / for internal speaker and lineOut bootargs alcid=11  ( remove for displayport audio )
++ Sound / for internal speaker and lineOut bootargs alcid=88
 + Fixed Airplay screen mirroring - black screen with mouse cursor (Skylake isue) 
 + iMessages
 + Wifi and Ethernet
@@ -40,13 +46,11 @@ https://browser.geekbench.com/v5/cpu/compare/9719494?baseline=8259325
 ## Installation
 
 
-- First of all, go to the UEFI settings and disable the serial port. Upgrade the BIOS to the newest possible version (currently the newest version is version no. [00.02.56, Rev.A](https://ftp.hp.com/pub/softpaq/sp96001-96500/sp96015.exe) which was released on the 30th of April 2019).
-- Copy OpenCore to EFI partition or USB drive. In contrast to Clover, you need to have BOOT\bootx64.efi file.
-- Simply put your Big Sur install USB into any port and select Install macOS option in OpenCore.
+
 
 - Durning installation if you nead ethernet and is disconected use terminal to set proper media type. Script is located under /EFI/network_UP_script 
 
 
 ### Issues
-+ Display Port Audio output isn't working with enabled internal speaker and lineout 
++ Display Port Audio output isn't working with enabled internal speaker and lineout / remove alcid=88 boot args 
 + Sleep 
