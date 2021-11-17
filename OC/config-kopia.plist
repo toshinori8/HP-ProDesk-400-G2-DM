@@ -177,6 +177,8 @@
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<false/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
 			<true/>
 			<key>SignalAppleOS</key>
@@ -194,43 +196,37 @@
 				<key>AAPL,GfxYTile</key>
 				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAWGQ==</data>
+				<data>AAAbGQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
+				<key>AAPL00,override-no-connect</key>
+				<data>AP///////wAF43yckAAAAAYbAQSlMBtgOm+xp1VMniUMUFS/7wDRwLMAlQCBgIFAgcABAQEBAjqAGHE4LUBYLEUA3QwRAAAeAAAA/QA4TB5TEQAKICAgICAgAAAA/AAyMjY5V00KICAgICAgAAAA/wBBSkNIMjlBMDAwMTQ0AZ0CAx7xSwUUkB8EEwMSAhEBIwkHAYMBAABlAwwAEACMCtCKIOAtEBA+lgDdDBEAABgBHQByUdAeIG4oVQDdDBEAAB6MCtCKIOAtEBA+lgDdDBEAABiMCtCQIEAxIAxAVQDdDBEAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyw==</data>
 				<key>device-id</key>
-				<data>FhkAAA==</data>
+				<data>EhkAAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con0-alldata</key>
+				<data>AAASAAAEAACYAAAAAQUSAAAEAADPAQAAAgQSAAAEAACHAQAA</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-flags</key>
+				<data>/1EAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
-				<string>Intel Iris 540</string>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-con2-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-con2-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con0-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con0-enable</key>
-				<data>AQAAAA==</data>
+				<string>Intel Skylake GT2 [HD Graphics 520]</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -683,9 +679,9 @@
 			<key>ARTFrequency</key>
 			<integer>0</integer>
 			<key>BoardProduct</key>
-			<string>Mac-63001698E7A34814</string>
+			<string>Mac-AF89B6D9451A490B</string>
 			<key>BoardRevision</key>
-			<data>Bw==</data>
+			<data>AQ==</data>
 			<key>DevicePathsSupported</key>
 			<integer>0</integer>
 			<key>FSBFrequency</key>
@@ -695,19 +691,19 @@
 			<key>PlatformName</key>
 			<string></string>
 			<key>SmcBranch</key>
-			<data>ajEzOF85AAA=</data>
+			<data></data>
 			<key>SmcPlatform</key>
-			<data>ajEzOQAAAAA=</data>
+			<data>ajE4NWYAAAA=</data>
 			<key>SmcRevision</key>
-			<data>AkcPAAAD</data>
+			<data></data>
 			<key>StartupPowerEvents</key>
 			<integer>0</integer>
 			<key>SystemProductName</key>
-			<string>iMac19,2</string>
+			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YL4ZGJWDW</string>
+			<string>C02CG0LR046M</string>
 			<key>SystemUUID</key>
-			<string>40B7F7D0-E340-4309-9C3C-1271C6C0ECE0</string>
+			<string>C309E18D-BD03-492A-A1E2-3A327DEBE83A</string>
 		</dict>
 		<key>Memory</key>
 		<dict>
@@ -768,52 +764,52 @@
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>BID</key>
-			<string>Mac-63001698E7A34814</string>
+			<string>Mac-AF89B6D9451A490B</string>
 			<key>FirmwareFeatures</key>
 			<data>dvWP/QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
 			<data>f//f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02916270CDKGQGCB</string>
+			<string>C020122074N0000A8</string>
 			<key>ROM</key>
 			<data>4kJhdYaZ</data>
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
-			<string>40B7F7D0-E340-4309-9C3C-1271C6C0ECE0</string>
+			<string>C309E18D-BD03-492A-A1E2-3A327DEBE83A</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
 			<key>BIOSReleaseDate</key>
-			<string>03/10/2021</string>
+			<string>07/05/2021</string>
 			<key>BIOSVendor</key>
 			<string></string>
 			<key>BIOSVersion</key>
-			<string>1554.100.64.0.0</string>
+			<string>1715.0.57.0.0</string>
 			<key>BoardAssetTag</key>
 			<string>Base Board Asset Tag</string>
 			<key>BoardLocationInChassis</key>
 			<string>Part Component</string>
 			<key>BoardManufacturer</key>
-			<string>HP-Prodesk</string>
+			<string>HP-ProDesk-G2400</string>
 			<key>BoardProduct</key>
-			<string>Mac-HP-Prodesk-G2-400</string>
+			<string>Mac-AF89B6D9451A490B</string>
 			<key>BoardSerialNumber</key>
-			<string>C02916270CDKGQGCB</string>
+			<string>C020122074N0000A8</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>iMac19,2</string>
+			<string>iMac20,2</string>
 			<key>ChassisAssetTag</key>
 			<string>Asset Tag#</string>
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02YL4ZGJWDW</string>
+			<string>C02CG0LR046M</string>
 			<key>ChassisType</key>
 			<integer>13</integer>
 			<key>ChassisVersion</key>
-			<string>Mac-63001698E7A34814</string>
+			<string>Mac-AF89B6D9451A490B</string>
 			<key>FirmwareFeatures</key>
 			<data>dvWP/QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
@@ -821,21 +817,21 @@
 			<key>PlatformFeature</key>
 			<integer>32</integer>
 			<key>ProcessorType</key>
-			<integer>1541</integer>
+			<integer>4105</integer>
 			<key>SmcVersion</key>
 			<data></data>
 			<key>SystemFamily</key>
 			<string>iMac</string>
 			<key>SystemManufacturer</key>
-			<string>iMac19,2</string>
+			<string></string>
 			<key>SystemProductName</key>
-			<string>iMac19,2</string>
+			<string>iMac20,2</string>
 			<key>SystemSKUNumber</key>
 			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YL4ZGJWDW</string>
+			<string>C02CG0LR046M</string>
 			<key>SystemUUID</key>
-			<string>40B7F7D0-E340-4309-9C3C-1271C6C0ECE0</string>
+			<string>C309E18D-BD03-492A-A1E2-3A327DEBE83A</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -909,8 +905,26 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HfsPlus.efi</string>
-			<string>OpenRuntime.efi</string>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>HfsPlus.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1009,6 +1023,8 @@
 			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForceOcWriteFlash</key>
+			<false/>
 			<key>ForgeUefiSupport</key>
 			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
@@ -1019,6 +1035,8 @@
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
