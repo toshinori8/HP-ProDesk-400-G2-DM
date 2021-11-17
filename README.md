@@ -27,6 +27,7 @@
 
 
 
+
 ## Working / Fixed; 
 
 
@@ -53,4 +54,5 @@ https://browser.geekbench.com/v5/cpu/compare/9719494?baseline=8259325
 
 ### Issues
 + Display Port Audio output isn't working with enabled internal speaker and lineout / remove alcid=88 boot args 
-+ Sleep 
++ Sleep not tested. 
++ Display flickering gone. This have something with sound, maybe using Skylake HDMI output was the issue. Adding [layout 88] to boot args enabled internal cheap speaker. Sound quality is excelent on external aplifier. After that no issues with powering down monitor, connection, and some sort of digital movements on display. I was literally prepared to check power in monitor :) but this start to work. Sleep is better. Updated Big Sur to 20G224. Next prepare for monterey.
