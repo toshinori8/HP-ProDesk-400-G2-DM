@@ -8,7 +8,7 @@
 | ------------------- | ------------------------------------------- |
 | Computer model      | HP Prodesk 400 G2 DM      					|
 | Processor           | Intel(R) Core(TM) i3-6100T CPU @ 3.20GHz    |
-| SMBIOS           | iMac19/2     |
+| SMBIOS           | iMac20/2     |
 | Graphics			  | Intel HD Graphics 530 fake [Intel Skylake GT2 [HD Graphics 520] 2048  MB]                 		|
 | Sound Card          | Realtek ALC221 (layout-id:88)            |
 | Ethernet		      | Realtek RTL8111 PCIE                        |
