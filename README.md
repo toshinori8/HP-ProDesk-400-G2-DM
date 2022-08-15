@@ -1,6 +1,6 @@
 ![HP Prodesk 400 G2 DM](OC/Resources/Image/HP-ProDesk-400-G2.webp)
 # HP ProDesk 400 G2 DM 
-## Big Sur 11.5.2 (20G95)
+## Monterey 12.5 (21G72)
 
 ## Configuration
 
@@ -21,7 +21,7 @@
 
 ## Improvements
 
-- This version was prepared using OpenCore 0.7.5 for MacOS Big Sur.
+- This version was prepared using OpenCore 0.7.5.
 - SSDT was generated for i3-6100T. Use https://github.com/Piker-Alpha/ssdtPRGen.sh to optimize yours CPU power management and then paste it into EFI/OC/ACPI/ssdt.aml
 - Used SSDTTime Script to fix irq issues for sound and generate dsdt-hpet.aml 
 
@@ -53,6 +53,6 @@ https://browser.geekbench.com/v5/cpu/compare/9719494?baseline=8259325
 
 
 ### Issues
-+ Display Port Audio output isn't working with enabled internal speaker and lineout / remove alcid=88 boot args 
++ Display Port Audio output isn't working with enabled internal speaker and lineout / remove alcid=88 in boot args 
 + Sleep not tested. 
-+ Display flickering gone. This have something with sound, maybe using Skylake HDMI output was the issue. Adding [layout 88] to boot args enabled internal cheap speaker. Sound quality is excelent on external aplifier. After that no issues with powering down monitor, connection, and some sort of digital movements on display. I was literally prepared to check power in monitor :) but this start to work. Sleep is better. Updated Big Sur to 20G224. Next prepare for monterey.
++ Display flickering gone. This have something with sound, maybe using Skylake HDMI output was the issue. Adding [layout 88] to boot args enabled internal cheap speaker. Sound quality is excelent on external aplifier. After that no issues with powering down monitor, connection, and some sort of digital movements on display. I was literally prepared to check power in monitor :) but this start to work. Sleep is better. Updated Monterey 12.5 (21G72).
