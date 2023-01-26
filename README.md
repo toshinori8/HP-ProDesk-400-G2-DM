@@ -1,14 +1,14 @@
 ![HP Prodesk 400 G2 DM](OC/Resources/Image/HP-ProDesk-400-G2.webp)
 # HP ProDesk 400 G2 DM 
-## Big Sur 11.5.2 (20G95)
+## Ventura 13.1 (22C65)
 
 ## Configuration
 
 | Specifications | Details                                          |
 | ------------------- | ------------------------------------------- |
 | Computer model      | HP Prodesk 400 G2 DM      					|
-| Processor           | Intel(R) Core(TM) i3-6100T CPU @ 3.20GHz    |
-| SMBIOS           | iMac20/2     |
+| Processor           | Intel(R) Core(TM) i5-6500T CPU @ 2.50GHz    |
+| SMBIOS              | iMacPro1,1     |
 | Graphics			  | Intel HD Graphics 530 fake [Intel Skylake GT2 [HD Graphics 520] 2048  MB]                 		|
 | Sound Card          | Realtek ALC221 (layout-id:88)            |
 | Ethernet		      | Realtek RTL8111 PCIE                        |
@@ -21,15 +21,13 @@
 
 ## Improvements
 
-- This version was prepared using OpenCore 0.7.5 for MacOS Big Sur.
-- SSDT was generated for i3-6100T. Use https://github.com/Piker-Alpha/ssdtPRGen.sh to optimize yours CPU power management and then paste it into EFI/OC/ACPI/ssdt.aml
+- This version was prepared using OpenCore 0.8.8.
 - Used SSDTTime Script to fix irq issues for sound and generate dsdt-hpet.aml 
 
 
 
 
 ## Working / Fixed; 
-
 
 
 + Intel HD 530 blnking screen - fix by inject Intel Iris 520 
@@ -42,7 +40,7 @@
 + Fixed RTC error on restart 
 
 GeekBench 5.3.2 Score 1919
-https://browser.geekbench.com/v5/cpu/compare/9719494?baseline=8259325
+<!-- https://browser.geekbench.com/v5/cpu/compare/9719494?baseline=8259325 -->
 
 ## Installation
 
@@ -53,6 +51,7 @@ https://browser.geekbench.com/v5/cpu/compare/9719494?baseline=8259325
 
 
 ### Issues
++ Wifi Intel 7265 m.2 works witks with Heliport app and AirportItlwm.kext
 + Display Port Audio output isn't working with enabled internal speaker and lineout / remove alcid=88 boot args 
-+ Sleep not tested. 
-+ Display flickering gone. This have something with sound, maybe using Skylake HDMI output was the issue. Adding [layout 88] to boot args enabled internal cheap speaker. Sound quality is excelent on external aplifier. After that no issues with powering down monitor, connection, and some sort of digital movements on display. I was literally prepared to check power in monitor :) but this start to work. Sleep is better. Updated Big Sur to 20G224. Next prepare for monterey.
++ Sleep not working. 
++ Display flickering gone. This have something with sound, maybe using Skylake HDMI output was the issue. Adding [layout 88] to boot args enabled internal cheap speaker. Sound quality is excelent on external aplifier. After that no issues with powering down monitor, connection, and some sort of digital movements on display. I was literally prepared to check power in monitor :) but this start to work. Sleep is better.
